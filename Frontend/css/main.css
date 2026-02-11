@@ -30,98 +30,86 @@
 */
 :root {
     /* Colores principales */
-    --primary-color: #FACD00;      /* Amarillo principal de la marca */
-    --secondary-color: #0033A0;    /* Azul oscuro complementario */
-    --accent-color: #FFFFFF;       /* Color de acento (blanco) */
-    --dark-color: #1A1A1A;         /* Color oscuro para texto */
-    --light-color: #FFFFFF;        /* Color claro para fondos */
-    
+    --primary-color: #28a745; /* Amarillo principal de la marca */
+    --secondary-color: #0033A0; /* Azul oscuro complementario */
+    --accent-color: #FFFFFF; /* Color de acento (blanco) */
+    --dark-color: #1A1A1A; /* Color oscuro para texto */
+    --light-color: #FFFFFF; /* Color claro para fondos */
     /* Colores secundarios */
-    --gray-light: #F5F5F5;         /* Gris muy claro para fondos */
-    --gray-medium: #E0E0E0;        /* Gris medio para bordes */
-    --gray-dark: #666666;          /* Gris oscuro para texto secundario */
-    --gold-light: #FFE77A;         /* Amarillo claro para efectos */
-    --gold-dark: #D4AF37;          /* Amarillo oscuro/dorado */
-    
+    --gray-light: #F5F5F5; /* Gris muy claro para fondos */
+    --gray-medium: #E0E0E0; /* Gris medio para bordes */
+    --gray-dark: #666666; /* Gris oscuro para texto secundario */
+    --gold-light: #FFE77A; /* Amarillo claro para efectos */
+    --gold-dark: #D4AF37; /* Amarillo oscuro/dorado */
     /* Colores de estado */
-    --success-color: #28a745;      /* Verde para operaciones exitosas */
-    --warning-color: #ffc107;      /* Amarillo para advertencias */
-    --error-color: #dc3545;        /* Rojo para errores */
-    --info-color: #17a2b8;         /* Azul para información */
-    
+    --success-color: #28a745; /* Verde para operaciones exitosas */
+    --warning-color: #ffc107; /* Amarillo para advertencias */
+    --error-color: #dc3545; /* Rojo para errores */
+    --info-color: #17a2b8; /* Azul para información */
     /* Tipografía */
-    --title-font: 'Oswald', sans-serif;  /* Fuente para títulos */
-    --text-font: 'Roboto', sans-serif;   /* Fuente para texto normal */
-    
+    --title-font: 'Oswald', sans-serif; /* Fuente para títulos */
+    --text-font: 'Roboto', sans-serif; /* Fuente para texto normal */
     /* Tamaños de fuente */
-    --font-xs: 0.75rem;    /* 12px - Texto muy pequeño */
-    --font-sm: 0.875rem;   /* 14px - Texto pequeño */
-    --font-base: 1rem;     /* 16px - Tamaño base */
-    --font-lg: 1.125rem;   /* 18px - Texto grande */
-    --font-xl: 1.25rem;    /* 20px - Texto extra grande */
-    --font-2xl: 1.5rem;    /* 24px - Títulos pequeños */
-    --font-3xl: 1.875rem;  /* 30px - Títulos medianos */
-    --font-4xl: 2.25rem;   /* 36px - Títulos grandes */
-    
+    --font-xs: 0.75rem; /* 12px - Texto muy pequeño */
+    --font-sm: 0.875rem; /* 14px - Texto pequeño */
+    --font-base: 1rem; /* 16px - Tamaño base */
+    --font-lg: 1.125rem; /* 18px - Texto grande */
+    --font-xl: 1.25rem; /* 20px - Texto extra grande */
+    --font-2xl: 1.5rem; /* 24px - Títulos pequeños */
+    --font-3xl: 1.875rem; /* 30px - Títulos medianos */
+    --font-4xl: 2.25rem; /* 36px - Títulos grandes */
     /* Espaciado */
-    --space-xs: 0.25rem;   /* 4px - Espacio muy pequeño */
-    --space-sm: 0.5rem;    /* 8px - Espacio pequeño */
-    --space-base: 1rem;    /* 16px - Espacio base */
-    --space-lg: 1rem;    /* 16px - Espacio base */
-    --space-xl: 2rem;      /* 32px - Espacio extra grande */
-    --space-2xl: 3rem;     /* 48px - Espacio xxl */
-    --space-3xl: 4rem;     /* 64px - Espacio xxxl */
-    --space-4xl: 5rem;     /* 80px - Espacio máximo */
-    
+    --space-xs: 0.25rem; /* 4px - Espacio muy pequeño */
+    --space-sm: 0.5rem; /* 8px - Espacio pequeño */
+    --space-base: 1rem; /* 16px - Espacio base */
+    --space-lg: 1rem; /* 16px - Espacio base */
+    --space-xl: 2rem; /* 32px - Espacio extra grande */
+    --space-2xl: 3rem; /* 48px - Espacio xxl */
+    --space-3xl: 4rem; /* 64px - Espacio xxxl */
+    --space-4xl: 5rem; /* 80px - Espacio máximo */
     /* Efectos visuales */
-    --box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);  /* Sombra pequeña */
-    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);     /* Sombra normal */
+    --box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra pequeña */
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra normal */
     --box-shadow-md: 0 6px 16px rgba(0, 0, 0, 0.12); /* Sombra media */
     --box-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra grande */
     --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra hover */
-    
     /* Transiciones */
-    --transition-fast: all 0.15s ease;  /* Transición rápida */
-    --transition: all 0.3s ease;        /* Transición normal */
-    --transition-slow: all 0.5s ease;   /* Transición lenta */
-    
+    --transition-fast: all 0.15s ease; /* Transición rápida */
+    --transition: all 0.3s ease; /* Transición normal */
+    --transition-slow: all 0.5s ease; /* Transición lenta */
     /* Border radius */
-    --radius-sm: 4px;    /* Radio pequeño */
-    --radius: 8px;       /* Radio base */
-    --radius-md: 12px;   /* Radio medio */
-    --radius-lg: 16px;   /* Radio grande */
-    --radius-xl: 24px;   /* Radio extra grande */
+    --radius-sm: 4px; /* Radio pequeño */
+    --radius: 8px; /* Radio base */
+    --radius-md: 12px; /* Radio medio */
+    --radius-lg: 16px; /* Radio grande */
+    --radius-xl: 24px; /* Radio extra grande */
     --radius-full: 9999px; /* Radio circular (100%) */
-    
     /* Anchos máximos */
-    --max-width-xs: 20rem;    /* 320px - Contenedor muy pequeño */
-    --max-width-sm: 24rem;    /* 384px - Contenedor pequeño */
-    --max-width-md: 28rem;    /* 448px - Contenedor medio */
-    --max-width-lg: 32rem;    /* 512px - Contenedor grande */
-    --max-width-xl: 36rem;    /* 576px - Contenedor xl */
-    --max-width-2xl: 42rem;   /* 672px - Contenedor xxl */
-    --max-width-3xl: 48rem;   /* 768px - Contenedor xxxl */
-    --max-width-4xl: 56rem;   /* 896px - Contenedor 4xl */
-    --max-width-5xl: 64rem;   /* 1024px - Contenedor 5xl */
-    --max-width-6xl: 72rem;   /* 1152px - Contenedor 6xl */
-    --max-width-7xl: 80rem;   /* 1280px - Contenedor máximo */
-    
+    --max-width-xs: 20rem; /* 320px - Contenedor muy pequeño */
+    --max-width-sm: 24rem; /* 384px - Contenedor pequeño */
+    --max-width-md: 28rem; /* 448px - Contenedor medio */
+    --max-width-lg: 32rem; /* 512px - Contenedor grande */
+    --max-width-xl: 36rem; /* 576px - Contenedor xl */
+    --max-width-2xl: 42rem; /* 672px - Contenedor xxl */
+    --max-width-3xl: 48rem; /* 768px - Contenedor xxxl */
+    --max-width-4xl: 56rem; /* 896px - Contenedor 4xl */
+    --max-width-5xl: 64rem; /* 1024px - Contenedor 5xl */
+    --max-width-6xl: 72rem; /* 1152px - Contenedor 6xl */
+    --max-width-7xl: 80rem; /* 1280px - Contenedor máximo */
     /* Layout específico del proyecto */
-    --header-height: 80px;            /* Altura del header normal */
-    --header-height-extended: 100px;  /* Altura del header con barra de búsqueda */
-    --container-max-width: 1200px;    /* Ancho máximo del contenedor principal */
-    --container-padding: 20px;        /* Padding lateral del contenedor */
-    
-    
+    --header-height: 80px; /* Altura del header normal */
+    --header-height-extended: 100px; /* Altura del header con barra de búsqueda */
+    --container-max-width: 1200px; /* Ancho máximo del contenedor principal */
+    --container-padding: 20px; /* Padding lateral del contenedor */
     /* Z-index layers */
-    --z-dropdown: 100;       /* Elementos desplegables */
-    --z-sticky: 200;         /* Elementos sticky */
-    --z-fixed: 300;          /* Elementos fixed */
+    --z-dropdown: 100; /* Elementos desplegables */
+    --z-sticky: 200; /* Elementos sticky */
+    --z-fixed: 300; /* Elementos fixed */
     --z-modal-backdrop: 400; /* Fondo de modales */
-    --z-modal: 500;          /* Modales */
-    --z-popover: 600;        /* Popovers */
-    --z-tooltip: 700;        /* Tooltips */
-    --z-toast: 800;          /* Notificaciones toast */
+    --z-modal: 500; /* Modales */
+    --z-popover: 600; /* Popovers */
+    --z-tooltip: 700; /* Tooltips */
+    --z-toast: 800; /* Notificaciones toast */
 }
 
 /* ============================================= */
