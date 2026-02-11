@@ -43,7 +43,7 @@ namespace Backend.Controllers
 
         // GET: api/productos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Producto>> GetProducto(int id)
+        public async Task<ActionResult<Producto>> GetProducto(Guid id))
         {
             try
             {
@@ -71,7 +71,8 @@ namespace Backend.Controllers
         {
             try
             {
-                _context.Productos.Add(producto);
+                 producto.Id = Guid.NewGuid();
+		_context.Productos.Add(producto);
                 await _context.SaveChangesAsync();
 
                 return CreatedAtAction(nameof(GetProducto), new { id = producto.Id }, producto);

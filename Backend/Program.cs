@@ -20,14 +20,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // 2. Configura CORS (Frontend-Backend)
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("FrontendPolicy", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:5500", "http://127.0.0.1:5500")  // Ajusta según el puerto de tu frontend
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials();
+              .AllowAnyMethod();
     });
 });
+
 
 // 3. Controladores y Swagger
 builder.Services.AddControllers();
@@ -53,7 +53,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 // --- Construye la App ---
 var app = builder.Build();
 
-// 👉 HABILITAR ARCHIVOS ESTÁTICOS
+//  HABILITAR ARCHIVOS ESTÁTICOS
 app.UseDefaultFiles();   // Busca index.html automáticamente
 app.UseStaticFiles();    // Permite servir wwwroot
 
@@ -81,7 +81,7 @@ MapControllers()
 
 app.UseRouting();
 app.UseHttpsRedirection();
-app.UseCors("FrontendPolicy");
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
