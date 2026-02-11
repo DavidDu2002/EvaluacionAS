@@ -43,7 +43,7 @@ namespace Backend.Controllers
 
         // GET: api/productos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Producto>> GetProducto(Guid id))
+        public async Task<ActionResult<Producto>> GetProducto(Guid id)
         {
             try
             {
